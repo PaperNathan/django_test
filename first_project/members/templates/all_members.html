@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <h1>All Members</h1>
+    <ul>
+      {% for member in members %}
+      <li>
+        <a href="/members/details/{{ member.id }}">
+          {{ member.firstname }} {{ member.lastname }}
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>
